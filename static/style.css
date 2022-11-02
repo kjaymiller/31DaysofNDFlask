@@ -1,0 +1,46 @@
+html {font-family: 'Open Sans', sans-serif;}
+.container {width: 100%; max-width: 800px; margin: auto;}
+
+div.message {
+    background-image: url('/static/Adhd\ Awareness\ Month-6.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    padding: 7rem 3rem 3rem 3rem;
+}
+
+a:visited {
+    color: #000000;
+}
+
+a:hover {
+    font-style: italic;
+}
+#message_text{
+    color: #333;
+    font-size: 2rem;
+    width: 500px;
+    font-style: italic;
+    padding-bottom: 2rem;
+}
+
+#reload {
+    float: right;
+    text-align: end;
+    background-color: transparent;
+    border: none;
+    color: #bbb
+}
+
+.h-6 {
+    height: 2rem;
+    stroke-width: 2;
+    stroke: #eee;
+    font-weight: bold;
+}
+
+.h-6:hover {
+    stroke: #333;
+    color: #333;
+    text-shadow: 1px 1px 2px #666;
+}

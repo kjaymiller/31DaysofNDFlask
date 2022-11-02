@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>#31DaysOfNeurodivergence - The Website</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" />
+  </head>
+  <body>
+    <div class="container">
+    <h1>#31Days of Neurodivergence</h1>
+    <h2>Here is a message of encouragement</h2>
+    <script src="https://unpkg.com/htmx.org@1.8.2"></script>
+      <div class="message">
+      <div id="message_text">{{message}}</div>
+      
+      <button id="reload" hx-trigger="click" hx-get="/message" hx-target="#message_text">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3" />
+          </svg>
+          
+        </button>    
+    </div>
+
+
+    <h2>What is this</h2>
+    <p>
+      This is a website inspired by my <a href="https://dev.to/kjaymiller/series/19375">2022 ADHD Awareness Month Project</a> where
+      everyday I shared a message of encouragement to those considering seeking
+      a diagnosis or those who have been diagnosed with ADHD or another
+      <a href="https://en.wikipedia.org/wiki/Neurodiversity">Neurodivergence</a
+      >.
+    </p>
+
+    <p>
+      I wanted to create a way for people to share supportive messages
+      anonymously.
+    </p>
+
+    <h3>
+      <a href="https://aka.ms/jm-ndform-2022">Add a message to this queue</a>
+    </h3>
+
+    <hr />
+    <footer>
+      <h3>
+        Built with 💙 and 🐍 using Azure (<a href="">Learn More</a>) by
+        <a href="https://kjaymiller.com">kjaymiller</a>
+      </h3>
+      <a href="https://github.com/kjaymiller/31DaysOfNeurodivergence"
+        >Source Code</a
+      >
+    </footer>
+</div>
+</body>
+</html>
