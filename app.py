@@ -1,11 +1,8 @@
-from flask import (
-    Flask,
-    render_template,
-    request,
-)
-import os
 import json
+import os
+
 from azure.storage.queue import QueueClient
+from flask import Flask, render_template, request
 
 queue = QueueClient.from_connection_string(
     conn_str=os.environ.get("AZURE_STORAGE_CONNECTION_STRING"),
